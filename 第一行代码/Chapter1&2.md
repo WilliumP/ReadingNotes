@@ -22,6 +22,17 @@ Intent还可以在启动活动的时候传递数据，利用genIntent获取上�
 
 活动状态：运行、暂停、停止、销毁
 
-完整生存期：onCreate() 和 onDestroy()之间，前者完成各种初始化操作，后者完成释放内存操作
+![活动状态转换](https://github.com/WilliumP/ReadingNotes/blob/master/res/1.png)
 
-可见生存期：onStart() 和 onStop()之间，前者在活动由不可见变为可见的时候调用（在后台运行也是可见），后者
+完整生存期：onCreate() 和 onDestroy()之间，前者完成各种初始化操作，后者完成释放内存操作。
+
+可见生存期：onStart() 和 onStop()之间，前者对资源进行加载，后者释放资源。
+
+前台生存期：onResume() 和 onPause()之间，此时活动可以和用户进行交互。
+
+5、Bundle参数传递/保存数据，onSaveInstanceState()回调方法可以在活动回收前调用，而且它携带Bundle类型的参数。Intent和Bundle可以结合起来传递数据。
+
+6、**活动的启动模式**
+
+![standard模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.png)
+
