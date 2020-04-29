@@ -34,5 +34,18 @@ Intent还可以在启动活动的时候传递数据，利用genIntent获取上�
 
 6、**活动的启动模式**
 
-![standard模式][tmp]
-[tmp]: https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.PNG "tmp"
+**standard模式**:活动默认的启动模式，每次启动都会创建一个活动的新的实例。原理示意图如下：
+
+![standard模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.PNG) 
+
+**singleTop模式**:当启动活动时发现栈顶已经是该活动，直接使用此实例，否则就新建一个活动。原理示意图如下：
+
+![singleTop模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/singleTop.PNG) 
+
+**singleTask模式**:检查栈中是否存在活动的实例，如果存在就直接使用，并把在该活动之上的所有活动出栈。原理示意图如下：
+
+![singleTask模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/singleTask.PNG)
+
+**singleInstance模式**:有一个单独的返回栈来管理该活动，其他应用程序来访问都共用一个返回栈。原理示意图如下：
+
+![singleInstance模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/singleInstance.PNG)
