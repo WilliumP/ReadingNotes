@@ -34,5 +34,5 @@ Intent还可以在启动活动的时候传递数据，利用genIntent获取上�
 
 6、**活动的启动模式**
 
-!12[standard模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.PNG)
+![standard模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.PNG)
 
