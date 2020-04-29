@@ -22,7 +22,7 @@ Intent还可以在启动活动的时候传递数据，利用genIntent获取上�
 
 活动状态：运行、暂停、停止、销毁
 
-![活动状态转换](https://github.com/WilliumP/ReadingNotes/blob/master/res/1.png)
+![**活动状态转换**](https://github.com/WilliumP/ReadingNotes/blob/master/res/1.png)
 
 完整生存期：onCreate() 和 onDestroy()之间，前者完成各种初始化操作，后者完成释放内存操作。
 
@@ -34,5 +34,6 @@ Intent还可以在启动活动的时候传递数据，利用genIntent获取上�
 
 6、**活动的启动模式**
 
-![standard模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.PNG)
+![standard模式](https://github.com/WilliumP/ReadingNotes/blob/master/res/standard.PNG)[123]
 
+standard模式:zui
